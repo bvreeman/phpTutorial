@@ -37,5 +37,12 @@
         echo "2027 is the year of the " . chinese_zodiac(2027) . ".<br />";
         ?>
         <br />
+        <?php
+            function better_hello($greeting, $target, $punct) {
+                return $greeting . ' ' . $target . $punct . "<br />";
+            }
+
+            echo better_hello("Hello", "John Doe", "!");
+        ?>
     </body>
 </html>
